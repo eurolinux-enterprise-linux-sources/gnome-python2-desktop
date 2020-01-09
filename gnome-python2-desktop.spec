@@ -28,7 +28,7 @@
 
 Name: gnome-python2-desktop
 Version: 2.28.0
-Release: 4%{?dist}
+Release: 5%{?dist}
 License: GPLv2+
 Group: Development/Languages
 Summary: The sources for additional PyGNOME Python extension modules
@@ -329,6 +329,10 @@ rm -rf $RPM_BUILD_ROOT
 %{python_sitearch}/gtk-2.0/gnomekeyring.so
 
 %changelog
+* Tue Jun 11 2013 Matthew Barnes <mbarnes@redhat.com> - 2.28.0-5.el6
+- Rebuild against newer evolution-data-server.
+Resolves: #973285
+
 * Thu Jan 14 2010 Matthew Barnes <mbarnes@redhat.com> - 2.28.0-4.el6
 - Fix rpmlint warnings.
 
