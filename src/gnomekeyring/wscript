@@ -1,0 +1,30 @@
+# -*- python -*-
+# encoding: utf-8
+
+import os
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'gnomekeyring')
+    if 'gnomekeyring' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('GNOMEKEYRING', 'gnome-keyring-1 >= 0.5.0 pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'gnomekeyring')
+            if conf.pkg_check_modules('GNOMEKEYRING_2_20_1', 'gnome-keyring-1 >= 2.20.1', mandatory=False):
+                conf.define('HAVE_KEYRING_2_20_1', 1)
+            else:
+                conf.undefine('HAVE_KEYRING_2_20_1')
+
+
+def build(bld):
+    env = bld.env
+    if 'gnomekeyring' in env['MODULES_TO_BUILD']:
+        bld.codegen('gnomekeyring', local_load_types=['gnomekeyring-argtypes.py'])
+
+        pyext = bld.create_pyext()
+        pyext.source = 'gnomekeyringmodule.c gnomekeyring.c'
+        pyext.target = 'gnomekeyring'
+        pyext.uselib = 'GNOMEKEYRING'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0'
+
+        bld.install_files('${DATADIR}/pygtk/2.0/defs', ['gnomekeyring.defs'])
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Python Gnomeprintui Reference Manual" link="index.html" author="Gian Mario Tagliaretti" name="pygnomeprintui">
+  <chapters>
+    <sub name="The Gnomeprintui Class Reference" link="gnomeprintui-class-reference.html">
+      <sub name="gnomeprint.ui.Dialog" link="class-gnomeprintuidialog.html"/>
+      <sub name="gnomeprint.ui.FontDialog" link="class-gnomeprintuifontdialog.html"/>
+      <sub name="gnomeprint.ui.FontSelection" link="class-gnomeprintuifontselection.html"/>
+      <sub name="gnomeprint.ui.FontPreview" link="class-gnomeprintuifontpreview.html"/>
+      <sub name="gnomeprint.ui.JobPreview" link="class-gnomeprintuijobpreview.html"/>
+      <sub name="gnomeprint.ui.Preview" link="class-gnomeprintuipreview.html"/>
+      <sub name="gnomeprint.ui.PaperSelector" link="class-gnomeprintuipaperselector.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="gnomeprint.ui.Dialog" link="class-gnomeprintuidialog.html#constructor-gnomeprintuidialog"/>
+    <function name="gnomeprint.ui.FontDialog" link="class-gnomeprintuifontdialog.html#constructor-gnomeprintuifontdialog"/>
+    <function name="gnomeprint.ui.FontSelection" link="class-gnomeprintuifontselection.html#constructor-gnomeprintuifontselection"/>
+    <function name="gnomeprint.ui.FontPreview" link="class-gnomeprintuifontpreview.html#constructor-gnomeprintuifontpreview"/>
+    <function name="gnomeprint.ui.JobPreview" link="class-gnomeprintuijobpreview.html#constructor-gnomeprintuijobpreview"/>
+    <function name="gnomeprint.ui.Preview" link="class-gnomeprintuipreview.html#constructor-gnomeprintuipreview"/>
+    <function name="gnomeprint.ui.PaperSelector" link="class-gnomeprintuipaperselector.html#constructor-gnomeprintuipaperselector"/>
+    <function name="gnomeprint.ui.Dialog.construct_range_any" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--construct-range-any"/>
+    <function name="gnomeprint.ui.Dialog.construct_range_custom" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--construct-range-custom"/>
+    <function name="gnomeprint.ui.Dialog.construct_range_page" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--construct-range-page"/>
+    <function name="gnomeprint.ui.Dialog.get_config" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--get-config"/>
+    <function name="gnomeprint.ui.Dialog.get_copies" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--get-copies"/>
+    <function name="gnomeprint.ui.Dialog.get_range" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--get-range"/>
+    <function name="gnomeprint.ui.Dialog.get_range_page" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--get-range-page"/>
+    <function name="gnomeprint.ui.Dialog.set_copies" link="class-gnomeprintuidialog.html#method-gnomeprintuidialog--set-copies"/>
+    <function name="gnomeprint.ui.FontDialog.get_fontsel" link="class-gnomeprintuifontdialog.html#method-gnomeprintuifontdialog--get-fontsel"/>
+    <function name="gnomeprint.ui.FontDialog.get_preview" link="class-gnomeprintuifontdialog.html#method-gnomeprintuifontdialog--get-preview"/>
+    <function name="gnomeprint.ui.FontSelection.get_face" link="class-gnomeprintuifontselection.html#method-gnomeprintuifontselection--get-face"/>
+    <function name="gnomeprint.ui.FontSelection.get_font" link="class-gnomeprintuifontselection.html#method-gnomeprintuifontselection--get-font"/>
+    <function name="gnomeprint.ui.FontSelection.get_size" link="class-gnomeprintuifontselection.html#method-gnomeprintuifontselection--get-size"/>
+    <function name="gnomeprint.ui.FontSelection.set_font" link="class-gnomeprintuifontselection.html#method-gnomeprintuifontselection--set-font"/>
+    <function name="The &quot;font-set&quot; gnomeprint.ui.FontSelection Signal" link="class-gnomeprintuifontselection.html#signal-gnomeprintuifontselection--font-set"/>
+    <function name="gnomeprint.ui.FontPreview.set_color" link="class-gnomeprintuifontpreview.html#method-gnomeprintuifontpreview--set-color"/>
+    <function name="gnomeprint.ui.FontPreview.set_font" link="class-gnomeprintuifontpreview.html#method-gnomeprintuifontpreview--set-font"/>
+    <function name="gnomeprint.ui.FontPreview.set_phrase" link="class-gnomeprintuifontpreview.html#method-gnomeprintuifontpreview--set-phrase"/>
+  </functions>
+</book>

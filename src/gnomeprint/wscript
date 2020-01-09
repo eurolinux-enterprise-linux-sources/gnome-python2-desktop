@@ -1,0 +1,45 @@
+# -*- python -*-
+# encoding: utf-8
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'gnomeprint')
+    if 'gnomeprint' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('GNOMEPRINT',
+                                  'libgnomeprint-2.2 >= 2.2.0 pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'gnomeprint')
+
+    conf.env.append_value('MODULES_AVAILABLE', 'gnomeprint.ui')
+    if 'gnomeprint.ui' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('GNOMEPRINTUI',
+                                  'libgnomeprintui-2.2 >= 2.2.0 pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'gnomeprint.ui')
+
+def build(bld):
+    
+    if 'gnomeprint' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('print', local_load_types=['print-arg-types.py'])
+        pyext = bld.create_pyext()
+        pyext.source = 'printmodule.c print.c art-gtype.c'
+        pyext.target = '_print'
+        pyext.uselib = 'GNOMEPRINT'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/gnomeprint'
+        pyext.includes = '.'
+
+    if 'gnomeprint.ui' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('printui', local_load_types=['print-arg-types.py'])
+        pyext = bld.create_pyext()
+        pyext.source = 'printuimodule.c printui.c'
+        pyext.target = 'ui'
+        pyext.uselib = 'GNOMEPRINTUI'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/gnomeprint'
+        pyext.includes = '.'
+
+    py = bld.new_task_gen('py')
+    py.install_path = '${PYTHONDIR}/gtk-2.0/gnomeprint'
+    py.source = "__init__.py"
+
+    bld.install_files('${DATADIR}//pygtk/2.0/defs',
+                      ['print.defs', 'printui.defs'])
+

@@ -1,0 +1,26 @@
+# -*- python -*-
+# encoding: utf-8
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'gnomedesktop')
+    if 'gnomedesktop' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('GNOMEDESKTOP', 'gnome-desktop-2.0 >= 2.10.0 pygobject-2.0',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'gnomedesktop')
+
+def build(bld):
+    
+    if 'gnomedesktop' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('_gnomedesktop')
+        pyext = bld.create_pyext()
+        pyext.source = '_gnomedesktopmodule.c _gnomedesktop.c'
+        pyext.target = '_gnomedesktop'
+        pyext.uselib = 'GNOMEDESKTOP'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/gnomedesktop'
+
+        py = bld.new_task_gen('py')
+        py.install_path = '${PYTHONDIR}/gtk-2.0/gnomedesktop'
+        py.source = "__init__.py"
+
+        bld.install_files('${DATADIR}/pygtk/2.0/defs', '_gnomedesktop.defs')
+

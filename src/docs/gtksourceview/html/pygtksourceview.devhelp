@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Python GtkSourceView Reference Manual" link="index.html" author="Gian Mario Tagliaretti" name="pygtksourceview">
+  <chapters>
+    <sub name="The GtkSourceView Class Reference" link="gtksourceview-class-reference.html">
+      <sub name="gtksourceview.SourceView" link="class-gtksourceview.html"/>
+      <sub name="gtksourceview.SourceBuffer" link="class-gtksourcebuffer.html"/>
+      <sub name="gtksourceview.SourceLanguage" link="class-gtksourcelanguage.html"/>
+      <sub name="gtksourceview.SourceLanguagesManager" link="class-gtksourcelanguagesmanager.html"/>
+      <sub name="gtksourceview.SourceMarker" link="class-gtksourcemarker.html"/>
+      <sub name="gtksourceview.SourceStyleScheme" link="class-gtksourcestylescheme.html"/>
+      <sub name="gtksourceview.SourceTag" link="class-gtksourcetag.html"/>
+      <sub name="gtksourceview.SourceTagTable" link="class-gtksourcetagtable.html"/>
+      <sub name="gtksourceview.SourceTagStyle" link="class-gtksourcetagstyle.html"/>
+      <sub name="gtksourceview.SourcePrintJob" link="class-gtksourceprintjob.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="gtksourceview.SourceView" link="class-gtksourceview.html#constructor-gtksourceview"/>
+    <function name="gtksourceview.SourceBuffer" link="class-gtksourcebuffer.html#constructor-gtksourcebuffer"/>
+    <function name="gtksourceview.SourceLanguage" link="class-gtksourcelanguage.html#constructor-gtksourcelanguage"/>
+    <function name="gtksourceview.SourceLanguagesManager" link="class-gtksourcelanguagesmanager.html#constructor-gtksourcelanguagesmanager"/>
+    <function name="gtksourceview.SourceMarker" link="class-gtksourcemarker.html#constructor-gtksourcemarker"/>
+    <function name="gtksourceview.SourceStyleScheme" link="class-gtksourcestylescheme.html#constructor-gtksourcestylescheme"/>
+    <function name="gtksourceview.SourceTagTable" link="class-gtksourcetagtable.html#constructor-gtksourcetagtable"/>
+    <function name="gtksourceview.SourceTagStyle" link="class-gtksourcetagstyle.html#constructor-gtksourcetagstyle"/>
+    <function name="gtksourceview.SourcePrintJob" link="class-gtksourceprintjob.html#constructor-gtksourceprintjob"/>
+    <function name="gtksourceview.SourceView.set_show_line_numbers" link="class-gtksourceview.html#method-gtksourceview--set-show-line-numbers"/>
+    <function name="gtksourceview.SourceView.get_show_line_numbers" link="class-gtksourceview.html#method-gtksourceview--get-show-line-numbers"/>
+    <function name="gtksourceview.SourceView.set_show_line_markers" link="class-gtksourceview.html#method-gtksourceview--set-show-line-markers"/>
+    <function name="gtksourceview.SourceView.get_show_line_markers" link="class-gtksourceview.html#method-gtksourceview--get-show-line-markers"/>
+    <function name="gtksourceview.SourceView.set_tabs_width" link="class-gtksourceview.html#method-gtksourceview--set-tabs-width"/>
+    <function name="gtksourceview.SourceView.get_tabs_width" link="class-gtksourceview.html#method-gtksourceview--get-tabs-width"/>
+    <function name="gtksourceview.SourceView.set_auto_indent" link="class-gtksourceview.html#method-gtksourceview--set-auto-indent"/>
+    <function name="gtksourceview.SourceView.get_auto_indent" link="class-gtksourceview.html#method-gtksourceview--get-auto-indent"/>
+    <function name="gtksourceview.SourceView.set_insert_spaces_instead_of_tabs" link="class-gtksourceview.html#method-gtksourceview--set-insert-spaces-instead-of-tabs"/>
+    <function name="gtksourceview.SourceView.get_insert_spaces_instead_of_tabs" link="class-gtksourceview.html#method-gtksourceview--get-insert-spaces-instead-of-tabs"/>
+    <function name="gtksourceview.SourceView.set_show_margin" link="class-gtksourceview.html#method-gtksourceview--set-show-margin"/>
+    <function name="gtksourceview.SourceView.get_show_margin" link="class-gtksourceview.html#method-gtksourceview--get-show-margin"/>
+    <function name="gtksourceview.SourceView.set_tabs_width" link="class-gtksourceview.html#method-gtksourceview--set-margin"/>
+    <function name="gtksourceview.SourceView.get_margin" link="class-gtksourceview.html#method-gtksourceview--get-margin"/>
+    <function name="gtksourceview.SourceView.set_marker_pixbuf" link="class-gtksourceview.html#method-gtksourceview--set-marker-pixbuf"/>
+    <function name="gtksourceview.SourceView.get_marker_pixbuf" link="class-gtksourceview.html#method-gtksourceview--get-marker-pixbuf"/>
+    <function name="gtksourceview.SourceView.set_smart_home_end" link="class-gtksourceview.html#method-gtksourceview--set-smart-home-end"/>
+    <function name="gtksourceview.SourceView.get_smart_home_end" link="class-gtksourceview.html#method-gtksourceview--get-smart-home-end"/>
+    <function name="The &quot;redo&quot; gtksourceview.SourceView Signal" link="class-gtksourceview.html#signal-gtksourceview--redo"/>
+    <function name="The &quot;undo&quot; gtksourceview.SourceView Signal" link="class-gtksourceview.html#signal-gtksourceview--undo"/>
+    <function name="gtksourceview.SourceBuffer.set_check_brackets" link="class-gtksourcebuffer.html#method-gtksourcebuffer--set-check-brackets"/>
+    <function name="gtksourceview.SourceBuffer.get_check_brackets" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-check-brackets"/>
+    <function name="gtksourceview.SourceBuffer.set_bracket_match_style" link="class-gtksourcebuffer.html#method-gtksourcebuffer--set-bracket-match-style"/>
+    <function name="gtksourceview.SourceBuffer.set_highlight" link="class-gtksourcebuffer.html#method-gtksourcebuffer--set-highlight"/>
+    <function name="gtksourceview.SourceBuffer.get_highlight" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-highlight"/>
+    <function name="gtksourceview.SourceBuffer.set_max_undo_levels" link="class-gtksourcebuffer.html#method-gtksourcebuffer--set-max-undo-levels"/>
+    <function name="gtksourceview.SourceBuffer.get_max_undo_levels" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-max-undo-levels"/>
+    <function name="gtksourceview.SourceBuffer.set_language" link="class-gtksourcebuffer.html#method-gtksourcebuffer--set-language"/>
+    <function name="gtksourceview.SourceBuffer.get_language" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-language"/>
+    <function name="gtksourceview.SourceBuffer.set_escape_char" link="class-gtksourcebuffer.html#method-gtksourcebuffer--set-escape-char"/>
+    <function name="gtksourceview.SourceBuffer.get_escape_char" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-escape-char"/>
+    <function name="gtksourceview.SourceBuffer.can_undo" link="class-gtksourcebuffer.html#method-gtksourcebuffer--can-undo"/>
+    <function name="gtksourceview.SourceBuffer.can_redo" link="class-gtksourcebuffer.html#method-gtksourcebuffer--can-redo"/>
+    <function name="gtksourceview.SourceBuffer.undo" link="class-gtksourcebuffer.html#method-gtksourcebuffer--undo"/>
+    <function name="gtksourceview.SourceBuffer.redo" link="class-gtksourcebuffer.html#method-gtksourcebuffer--redo"/>
+    <function name="gtksourceview.SourceBuffer.begin_not_undoable_action" link="class-gtksourcebuffer.html#method-gtksourcebuffer--begin-not-undoable-action"/>
+    <function name="gtksourceview.SourceBuffer.end_not_undoable_action" link="class-gtksourcebuffer.html#method-gtksourcebuffer--end-not-undoable-action"/>
+    <function name="gtksourceview.SourceBuffer.create_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--create-marker"/>
+    <function name="gtksourceview.SourceBuffer.move_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--move-marker"/>
+    <function name="gtksourceview.SourceBuffer.delete_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--delete-marker"/>
+    <function name="gtksourceview.SourceBuffer.get_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-marker"/>
+    <function name="gtksourceview.SourceBuffer.get_markers_in_region" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-markers-in-region"/>
+    <function name="gtksourceview.SourceBuffer.get_first_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-first-marker"/>
+    <function name="gtksourceview.SourceBuffer.get_last_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-last-marker"/>
+    <function name="gtksourceview.SourceBuffer.get_iter_at_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-iter-at-marker"/>
+    <function name="gtksourceview.SourceBuffer.get_next_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-next-marker"/>
+    <function name="gtksourceview.SourceBuffer.get_prev_marker" link="class-gtksourcebuffer.html#method-gtksourcebuffer--get-prev-marker"/>
+    <function name="gtksourceview.SourceBuffer.gtk_source_buffer_new_with_language" link="class-gtksourcebuffer.html#function-gtksourcebuffer--new-with-language"/>
+    <function name="The &quot;can-redo&quot; gtksourceview.SourceBuffer Signal" link="class-gtksourcebuffer.html#signal-gtksourcebuffer--can-redo"/>
+    <function name="The &quot;can-undo&quot; gtksourceview.SourceBuffer Signal" link="class-gtksourcebuffer.html#signal-gtksourcebuffer--can-undo"/>
+    <function name="The &quot;highlight-updated&quot; gtksourceview.SourceBuffer Signal" link="class-gtksourcebuffer.html#signal-gtksourcebuffer--highlight-updated"/>
+    <function name="The &quot;marker-updated&quot; gtksourceview.SourceBuffer Signal" link="class-gtksourcebuffer.html#signal-gtksourcebuffer--marker-updated"/>
+    <function name="gtksourceview.SourceLanguage.get_name" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-name"/>
+    <function name="gtksourceview.SourceLanguage.get_section" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-section"/>
+    <function name="gtksourceview.SourceLanguage.get_tags" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-tags"/>
+    <function name="gtksourceview.SourceLanguage.get_escape_char" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-escape-char"/>
+    <function name="gtksourceview.SourceLanguage.get_mime_types" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-mime-types"/>
+    <function name="gtksourceview.SourceLanguage.set_mime_types" link="class-gtksourcelanguage.html#method-gtksourcelanguage--set-mime-types"/>
+    <function name="gtksourceview.SourceLanguage.get_style_scheme" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-style-scheme"/>
+    <function name="gtksourceview.SourceLanguage.set_style_scheme" link="class-gtksourcelanguage.html#method-gtksourcelanguage--set-style-scheme"/>
+    <function name="gtksourceview.SourceLanguage.get_tag_style" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-tag-style"/>
+    <function name="gtksourceview.SourceLanguage.set_style_scheme" link="class-gtksourcelanguage.html#method-gtksourcelanguage--set-tag-style"/>
+    <function name="gtksourceview.SourceLanguage.get_tag_default_style" link="class-gtksourcelanguage.html#method-gtksourcelanguage--get-tag-default-style"/>
+    <function name="The &quot;tag-style-changed&quot; gtksourceview.SourceLanguage Signal" link="class-gtksourcelanguage.html#signal-gtksourcelanguage--tag-style-changed"/>
+    <function name="gtksourceview.SourceLanguagesManager.get_available_languages" link="class-gtksourcelanguagesmanager.html#method-gtksourcelanguagesmanager--get-available-languages"/>
+    <function name="gtksourceview.SourceLanguagesManager.get_language_from_mime_type" link="class-gtksourcelanguagesmanager.html#method-gtksourcelanguagesmanager--get-language-from-mime-type"/>
+    <function name="gtksourceview.SourceLanguagesManager.get_lang_files_dirs" link="class-gtksourcelanguagesmanager.html#method-gtksourcelanguagesmanager--get-lang-files-dirs"/>
+    <function name="gtksourceview.SourceMarker.set_marker_type" link="class-gtksourcemarker.html#method-gtksourcemarker--set-marker-type"/>
+    <function name="gtksourceview.SourceMarker.get_marker_type" link="class-gtksourcemarker.html#method-gtksourcemarker--get-marker-type"/>
+    <function name="gtksourceview.SourceMarker.get_line" link="class-gtksourcemarker.html#method-gtksourcemarker--get-line"/>
+    <function name="gtksourceview.SourceMarker.get_name" link="class-gtksourcemarker.html#method-gtksourcemarker--get-name"/>
+    <function name="gtksourceview.SourceMarker.get_buffer" link="class-gtksourcemarker.html#method-gtksourcemarker--get-buffer"/>
+    <function name="gtksourceview.SourceMarker.next" link="class-gtksourcemarker.html#method-gtksourcemarker--next"/>
+    <function name="gtksourceview.SourceMarker.prev" link="class-gtksourcemarker.html#method-gtksourcemarker--prev"/>
+    <function name="gtksourceview.SourceStyleScheme.get_tag_style" link="class-gtksourcestylescheme.html#method-gtksourcestylescheme--get-tag-style"/>
+    <function name="gtksourceview.SourceStyleScheme.get_name" link="class-gtksourcestylescheme.html#method-gtksourcestylescheme--get-name"/>
+    <function name="gtksourceview.SourceStyleScheme.get_style_names" link="class-gtksourcestylescheme.html#method-gtksourcestylescheme--get-style-names"/>
+    <function name="gtksourceview.gtk_source_style_scheme_get_default" link="class-gtksourcestylescheme.html#function-gtksourcestylescheme--get-default"/>
+    <function name="gtksourceview.SourceTag.get_id" link="class-gtksourcetag.html#method-gtksourcetag--get-id"/>
+    <function name="gtksourceview.SourceTag.get_style" link="class-gtksourcetag.html#method-gtksourcetag--get-style"/>
+    <function name="gtksourceview.SourceTag.set_style" link="class-gtksourcetag.html#method-gtksourcetag--set-style"/>
+    <function name="gtksourceview.SourceTagTable.add_tags" link="class-gtksourcetagtable.html#method-gtksourcetagtable--add-tags"/>
+    <function name="gtksourceview.SourceTagTable.remove_source_tags" link="class-gtksourcetagtable.html#method-gtksourcetagtable--remove-source-tags"/>
+    <function name="The &quot;changed&quot; gtksourceview.SourceTagTable Signal" link="class-gtksourcetagtable.html#signal-gtksourcetagtable--changed"/>
+    <function name="gtksourceview.SourceTagStyle.copy" link="class-gtksourcetagstyle.html#method-gtksourcetagstyle--copy"/>
+    <function name="gtksourceview.SourceTagStyle.free" link="class-gtksourcetagstyle.html#method-gtksourcetagstyle--free"/>
+    <function name="gtksourceview.SourcePrintJob.set_config" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-config"/>
+    <function name="gtksourceview.SourcePrintJob.get_config" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-config"/>
+    <function name="gtksourceview.SourcePrintJob.set_buffer" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-buffer"/>
+    <function name="gtksourceview.SourcePrintJob.get_buffer" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-buffer"/>
+    <function name="gtksourceview.SourcePrintJob.setup_from_view" link="class-gtksourceprintjob.html#method-gtksourceprintjob--setup-from-view"/>
+    <function name="gtksourceview.SourcePrintJob.set_tabs_width" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-tabs-width"/>
+    <function name="gtksourceview.SourcePrintJob.get_tabs_width" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-tabs-width"/>
+    <function name="gtksourceview.SourcePrintJob.set_wrap_mode" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-wrap-mode"/>
+    <function name="gtksourceview.SourcePrintJob.get_wrap_mode" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-wrap-mode"/>
+    <function name="gtksourceview.SourcePrintJob.set_highlight" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-highlight"/>
+    <function name="gtksourceview.SourcePrintJob.get_highlight" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-highlight"/>
+    <function name="gtksourceview.SourcePrintJob.set_font_desc" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-font-desc"/>
+    <function name="gtksourceview.SourcePrintJob.get_font_desc" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-font-desc"/>
+    <function name="gtksourceview.SourcePrintJob.set_font" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-font"/>
+    <function name="gtksourceview.SourcePrintJob.get_font" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-font"/>
+    <function name="gtksourceview.SourcePrintJob.set_numbers_font_desc" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-numbers-font-desc"/>
+    <function name="gtksourceview.SourcePrintJob.get_numbers_font_desc" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-numbers-font-desc"/>
+    <function name="gtksourceview.SourcePrintJob.set_numbers_font" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-numbers-font"/>
+    <function name="gtksourceview.SourcePrintJob.get_numbers_font" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-numbers-font"/>
+    <function name="gtksourceview.SourcePrintJob.set_print_numbers" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-print-numbers"/>
+    <function name="gtksourceview.SourcePrintJob.get_print_numbers" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-print-numbers"/>
+    <function name="gtksourceview.SourcePrintJob.set_text_margins" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-text-margins"/>
+    <function name="gtksourceview.SourcePrintJob.get_text_margins" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-text-margins"/>
+    <function name="gtksourceview.SourcePrintJob.print" link="class-gtksourceprintjob.html#method-gtksourceprintjob--print"/>
+    <function name="gtksourceview.SourcePrintJob.print_range" link="class-gtksourceprintjob.html#method-gtksourceprintjob--print-range"/>
+    <function name="gtksourceview.SourcePrintJob.print_range_async" link="class-gtksourceprintjob.html#method-gtksourceprintjob--print-range-async"/>
+    <function name="gtksourceview.SourcePrintJob.cancel" link="class-gtksourceprintjob.html#method-gtksourceprintjob--cancel"/>
+    <function name="gtksourceview.SourcePrintJob.get_print_job" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-print-job"/>
+    <function name="gtksourceview.SourcePrintJob.get_page" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-page"/>
+    <function name="gtksourceview.SourcePrintJob.get_page_count" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-page-count"/>
+    <function name="gtksourceview.SourcePrintJob.get_print_context" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-print-context"/>
+    <function name="gtksourceview.SourcePrintJob.set_print_header" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-print-header"/>
+    <function name="gtksourceview.SourcePrintJob.get_print_header" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-print-header"/>
+    <function name="gtksourceview.SourcePrintJob.set_print_footer" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-print-footer"/>
+    <function name="gtksourceview.SourcePrintJob.get_print_footer" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-print-footer"/>
+    <function name="gtksourceview.SourcePrintJob.set_header_footer_font_desc" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-header-footer-font-desc"/>
+    <function name="gtksourceview.SourcePrintJob.get_header_footer_font_desc" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-header-footer-desc"/>
+    <function name="gtksourceview.SourcePrintJob.set_header_footer_font" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-header-footer-font"/>
+    <function name="gtksourceview.SourcePrintJob.get_header_footer_font" link="class-gtksourceprintjob.html#method-gtksourceprintjob--get-header-footer-font"/>
+    <function name="gtksourceview.SourcePrintJob.set_header_format" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-header-format"/>
+    <function name="gtksourceview.SourcePrintJob.set_footer_format" link="class-gtksourceprintjob.html#method-gtksourceprintjob--set-footer-format"/>
+    <function name="The &quot;begin-page&quot; gtksourceprintjob.SourcePrintJob Signal" link="class-gtksourceprintjob.html#signal-gtksourceprintjob--begin-page"/>
+    <function name="The &quot;finished&quot; gtksourceprintjob.SourcePrintJob Signal" link="class-gtksourceprintjob.html#signal-gtksourceprintjob--finished"/>
+  </functions>
+</book>
